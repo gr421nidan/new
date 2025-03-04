@@ -11,9 +11,10 @@ interface IOtpCodeInputProps {
     style?: React.CSSProperties;
     inputMode?: "numeric";
 }
-const OtpCodeInput: FC<IOtpCodeInputProps> = ({ value, onChange,numInputs, className = "", inputMode = "numeric"}) => {
+const OtpCodeInput: FC<IOtpCodeInputProps> = ({ value, onChange,numInputs, className, inputMode, ...props}) => {
     return (
         <OtpInput
+            {...props}
             value={value}
             onChange={onChange}
             numInputs={numInputs}

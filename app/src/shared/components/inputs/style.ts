@@ -20,3 +20,9 @@ export const inputsStyles = cva(
 
 export const iconStyles =
     "absolute text-white opacity-0 peer-checked:opacity-100";
+
+export const buttonInputStyles =
+    "absolute right-4 top-1/2 transform -translate-y-1/2";
+
+export const iconInputStyles =
+    "text-black dark:text-white w-[20px] h-[20px]";
