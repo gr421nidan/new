@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="стили.">
+    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="ref???">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/shared/components/inputs/base-input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/components/inputs/base-input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/shared/components/inputs/checkbox-input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/components/inputs/checkbox-input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/shared/components/inputs/otp-input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/components/inputs/otp-input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/shared/components/inputs/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/components/inputs/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,8 @@
       <workItem from="1741079385339" duration="1805000" />
       <workItem from="1741082651060" duration="2000" />
       <workItem from="1741083314246" duration="4000" />
-      <workItem from="1741083578649" duration="1836000" />
+      <workItem from="1741083578649" duration="1984000" />
+      <workItem from="1741097761436" duration="3133000" />
     </task>
     <task id="LOCAL-00001" summary="Дааа">
       <option name="closed" value="true" />
@@ -116,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741070906682</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ref???">
+      <option name="closed" value="true" />
+      <created>1741085444119</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741085444119</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +133,7 @@
     <MESSAGE value="Переделала чекбокс на переиспользуемый" />
     <MESSAGE value="стили" />
     <MESSAGE value="стили." />
-    <option name="LAST_COMMIT_MESSAGE" value="стили." />
+    <MESSAGE value="ref???" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref???" />
   </component>
 </project>

@@ -21,7 +21,7 @@
 body{
     min-width: 1920px;
     min-height: 1280px;
-    background-color: var(--color-purple-light);
+
     font-family: "Nunito", sans-serif;
 }
 @layer base {

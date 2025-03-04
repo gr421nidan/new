@@ -1,7 +1,7 @@
-import { FC} from "react";
+import { forwardRef } from "react";
 import OtpInput from "react-otp-input";
 import { cn } from "@/shared/utils/cn";
-import { inputsStyles } from "../style.ts"
+import { inputsStyles } from "../style.ts";
 
 interface IOtpCodeInputProps {
     value: string;
@@ -11,24 +11,28 @@ interface IOtpCodeInputProps {
     style?: React.CSSProperties;
     inputMode?: "numeric";
 }
-const OtpCodeInput: FC<IOtpCodeInputProps> = ({ value, onChange,numInputs, className, inputMode, ...props}) => {
-    return (
-        <OtpInput
-            {...props}
-            value={value}
-            onChange={onChange}
-            numInputs={numInputs}
-            containerStyle={cn("flex gap-[27px]", className)}
-            renderInput={(props) => (
-                <input
-                    {...props}
-                    type="number"
-                    inputMode={inputMode}
-                    className={cn(inputsStyles({ variant: "otp" }))}/>
-            )}
-        />
-    );
-};
 
+const OtpCodeInput = forwardRef<HTMLInputElement, IOtpCodeInputProps>(
+    ({ value, onChange, numInputs, className, inputMode, ...props }, ref) => {
+        return (
+            <OtpInput
+                {...props}
+                value={value}
+                onChange={onChange}
+                numInputs={numInputs}
+                containerStyle={cn("flex gap-[27px]", className)}
+                renderInput={(inputProps) => (
+                    <input
+                        {...inputProps}
+                        ref={ref}
+                        type="number"
+                        inputMode={inputMode}
+                        className={cn(inputsStyles({ variant: "otp" }))}
+                    />
+                )}
+            />
+        );
+    }
+);
 
 export default OtpCodeInput;
