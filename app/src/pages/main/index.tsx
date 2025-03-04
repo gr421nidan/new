@@ -6,6 +6,7 @@ import CustomDatePicker from "@/shared/ui/date";
 import Input from "@/shared/components/inputs/base-input";
 import Button from "@/shared/components/buttons/button";
 import {useLogout} from "@/entities/auth/logout";
+import CheckboxInput from "@/shared/components/inputs/checkbox-input";
 
 
 const MainPage = (): ReactNode => {
@@ -34,6 +35,9 @@ const MainPage = (): ReactNode => {
                 </div>
                 <div>
                     <OtpCodeInput value={otp} onChange={setOtp} numInputs={6}/>
+                    <CheckboxInput name="me" value="1"  type="radio" className="w-[20px] h-[20px]"/>
+                    <CheckboxInput name="me" value="2"  type="radio" className="w-[20px] h-[20px]"/>
+                    <CheckboxInput name="к" value="32"  type="checkbox" className="w-[20px] h-[20px]"/>
                 </div>
             </section>
         </main>

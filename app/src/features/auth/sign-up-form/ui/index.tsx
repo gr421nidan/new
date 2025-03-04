@@ -5,21 +5,20 @@ import {ERoleID} from "@/entities/auth/sign-up/type";
 import icon from '@/assets/icon.svg';
 import {inputsStyles} from "@/shared/components/inputs/style.ts";
 import {cn} from "@/shared/utils/cn";
-import {Icon} from "@iconify/react";
+
 import {
     formContainerStyles,
     formAuthStyles,
     inputContainerStyles,
     errorTextStyles,
     headerStyles,
-    iconStyles,
-    radioContainerStyles,
     flexCol,
-    linkStyles, radioStyles
+    linkStyles, radioContainerStyles
 } from "../../style";
 import {validationRules} from "@/features/auth/validation-auth-form";
 import {Link} from "react-router-dom";
 import ERouterPath from "@/shared/common/enum/router";
+import CheckboxInput from "@/shared/components/inputs/checkbox-input";
 
 const sizeInputs = "w-[474px]";
 const SignUpForm = () => {
@@ -67,15 +66,15 @@ const SignUpForm = () => {
                     <div className={`${flexCol} gap-[23px] justify-start`}>
                         {([ERoleID.USER, ERoleID.ADMIN] as number[]).map((role) => (
                             <label key={role} className={radioContainerStyles()}>
-                                <input
+                                <CheckboxInput
                                     {...register("role_id", validationRules.role_id)}
-                                    type="radio"
-                                    value={String(role)}
                                     name="role_id"
+                                    value={role}
+                                    type="radio"
                                     className={cn(
-                                        radioStyles({ error: !!errors.role_id}),
-                                        "appearance-none peer checked:bg-purple w-[20px] h-[20px]" )}/>
-                                <Icon icon="uil:check" className={cn(iconStyles(), "w-[20px]")}/>
+                                        inputsStyles({ error: !!errors.role_id}),
+                                        "w-[20px] h-[20px]" )}
+                                />
                                 <span className={errors.role_id ? errorTextStyles({error: true}) : ""}>
                                     {role === ERoleID.USER ? "Для личного использования" : "Для совместного использования"}
                                 </span>

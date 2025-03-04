@@ -28,9 +28,6 @@ export const errorTextStyles = cva(
 export const headerStyles = cva(
     "bg-purple-light rounded-xl px-3 w-fit"
 );
-export const iconStyles = cva(
-    "absolute text-white opacity-0 peer-checked:opacity-100"
-);
 
 export const linkStyles = cva(
     "flex gap-2 text-[20px]"
