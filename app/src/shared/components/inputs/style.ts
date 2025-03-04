@@ -1,13 +1,13 @@
 import { cva } from "class-variance-authority";
 
 export const inputsStyles = cva(
-    "border-2 outline-none transition-all hover:shadow-[0_0_20px_var(--color-custom-shadow)] " +
+    "border-2 outline-none transition-all hover:custom-shadow " +
     "dark:text-white dark:placeholder-white-secondary hover:placeholder-black dark:hover:placeholder-white focus:border-purple hover:border-purple",
     {
         variants: {
             variant: {
                 basic: "text-black border-purple-light h-[54px] text-[20px] px-[27px] rounded-[20px] bg-white dark:bg-gray placeholder-dark-gray ",
-                otp: "text-black border-purple-light rounded-[10px] w-[60px] h-[60px] focus:border-purple text-center focus:outline-none hover:shadow-[0_0_20px_var(--color-custom-shadow)] dark:text-white text-[32px]",
+                otp: "text-black border-purple-light rounded-[10px] w-[60px] h-[60px] focus:border-purple text-center focus:outline-none hover:custom-shadow dark:text-white text-[32px]",
                 check:"peer appearance-none rounded-[5px] border-purple flex text-white items-center cursor-pointer transition-all checked:bg-purple"
             },
             error: {

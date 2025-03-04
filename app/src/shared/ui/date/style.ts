@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 export const datePickerContainer = cva(
-    "outline-none h-[52px] rounded-[20px] text-center border border-3 bg-white text-black border-purple hover:border-purple-light hover:text-dark-gray hover:shadow-[0_0_10px_var(--color-custom-shadow)] dark:text-white dark:hover:text-white dark:bg-gray dark:active:text-purple dark:hover:border-purple active:text-purple active:shadow-none active:border-purple"
+    "outline-none h-[52px] rounded-[20px] text-center border border-3 bg-white text-black border-purple hover:border-purple-light hover:text-dark-gray hover:custom-shadow dark:text-white dark:hover:text-white dark:bg-gray dark:active:text-purple dark:hover:border-purple active:text-purple active:shadow-none active:border-purple"
 );
 
 export const datePickerCalendar = cva(

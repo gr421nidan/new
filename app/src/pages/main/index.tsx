@@ -7,6 +7,7 @@ import Input from "@/shared/components/inputs/base-input";
 import Button from "@/shared/components/buttons/button";
 import {useLogout} from "@/entities/auth/logout";
 import CheckboxInput from "@/shared/components/inputs/checkbox-input";
+import ButtonIcon from "@/shared/components/buttons/batton-icon";
 
 
 const MainPage = (): ReactNode => {
@@ -26,6 +27,9 @@ const MainPage = (): ReactNode => {
             <CustomDatePicker className="w-[248px]"/>
            <CustomSelect defaultLabel="Права" className="w-[248px]" options={options}/>
             <Button onClick={logout} className="w-[200px]">Выход</Button>
+
+            <ButtonIcon icon="mdi:home">Домой</ButtonIcon>
+            <ButtonIcon icon="mdi:settings"/>
             <section className="bg-pink-100">
                 <div>
                     <Input placeholder="Имя*" className="w-[474px]"/>

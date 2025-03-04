@@ -5,7 +5,7 @@ export const selectBoxStyles = cva(
     {
         variants: {
             isOpen: {
-                true: "shadow-[0_0_5px_var(--color-purple)]",
+                true: "custom-shadow",
                 false: "",
             },
         },
