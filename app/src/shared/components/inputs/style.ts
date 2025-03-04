@@ -6,7 +6,7 @@ export const inputsStyles = cva(
     {
         variants: {
             variant: {
-                basic: "text-black border-purple-light h-[54px] text-[20px] px-[27px] rounded-[20px] bg-white dark:bg-gray placeholder-dark-gray ",
+                basic: "text-black border-purple-light text-[20px] px-[27px] rounded-[20px] bg-white dark:bg-gray placeholder-dark-gray ",
                 otp: "text-black border-purple-light rounded-[10px] w-[60px] h-[60px] focus:border-purple text-center focus:outline-none hover:custom-shadow dark:text-white text-[32px]",
                 check:"peer appearance-none rounded-[5px] border-purple flex text-white items-center cursor-pointer transition-all checked:bg-purple"
             },
@@ -18,6 +18,5 @@ export const inputsStyles = cva(
     }
 );
 
-export const iconStyles = cva(
-    "absolute text-white opacity-0 peer-checked:opacity-100 w-[20px] h-[20px] "
-);
+export const iconStyles =
+    "absolute text-white opacity-0 peer-checked:opacity-100";

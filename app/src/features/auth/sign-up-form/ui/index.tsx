@@ -20,7 +20,7 @@ import {Link} from "react-router-dom";
 import ERouterPath from "@/shared/common/enum/router";
 import CheckboxInput from "@/shared/components/inputs/checkbox-input";
 
-const sizeInputs = "w-[474px]";
+const sizeInputs = "w-[474px] h-[54px]";
 const SignUpForm = () => {
     const {register, handleSubmit, onSubmit, errors} = useSignUpForm();
     return (
@@ -72,7 +72,7 @@ const SignUpForm = () => {
                                     value={role}
                                     type="radio"
                                     className={cn(
-                                        inputsStyles({ error: !!errors.role_id}),
+                                        inputsStyles({variant: "check", error: !!errors.role_id}),
                                         "w-[20px] h-[20px]" )}
                                 />
                                 <span className={errors.role_id ? errorTextStyles({error: true}) : ""}>

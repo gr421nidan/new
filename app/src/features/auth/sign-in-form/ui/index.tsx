@@ -19,6 +19,7 @@ const SignInForm = () => {
         onSubmit,
         errors,
     } = useSignInForm();
+    const sizeInputs = "w-[474px] h-[54px]";
     return (
         <form onSubmit={handleSubmit(onSubmit)}
               className={cn(formAuthStyles(), "pt-[52px] min-h-[697px]")}>
@@ -34,7 +35,7 @@ const SignInForm = () => {
                                 {...register("email", validationRules.email)}
                                 type="email"
                                 placeholder="E-mail*"
-                                className={cn(inputsStyles({error: !!errors.email}), "w-[474px]")}/>
+                                className={cn(inputsStyles({error: !!errors.email}), sizeInputs)}/>
                             {errors.email && <p className={errorTextStyles()}>{errors.email.message}</p>}
                         </div>
                         <div>
@@ -42,7 +43,7 @@ const SignInForm = () => {
                                 {...register("password", validationRules.password)}
                                 placeholder="Пароль*"
                                 type="password"
-                                className={cn(inputsStyles({error: !!errors.password}), "w-[474px]")}/>
+                                className={cn(inputsStyles({error: !!errors.password}), sizeInputs)}/>
                             {errors.password && <p className={errorTextStyles()}>{errors.password.message}</p>}
                         </div>
                         <div className={linkStyles()}>

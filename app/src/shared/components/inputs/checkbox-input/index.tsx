@@ -21,7 +21,7 @@ const CheckboxInput: React.FC<ICheckboxInputProps> = ({name, value, type, classN
                     inputsStyles({variant: "check"}), className
                 )}
             />
-            <Icon icon="uil:check" className={cn(iconStyles())}/>
+            <Icon icon="uil:check" className={cn(iconStyles, className)}/>
         </label>
     );
 };
