@@ -14,6 +14,8 @@
     --color-error-secondary: rgba(253, 169, 169, 0.16);
     --color-custom-shadow:rgba(174, 161, 201, 0.5);
     --color-white-secondary:rgba(255, 255, 255, 0.7);
+    --gradient-purple-light: linear-gradient(to right, rgba(174, 161, 201, 0.5), rgba(174, 161, 201, 0.1));
+    --color-purple-lighter-opacity: rgba(98, 70, 153, 0.5);
 }
 [data-theme="dark"] body {
     background-color: var(--color-purple-dark);
@@ -62,5 +64,8 @@ body{
     }
     .hover\:custom-drop-shadow:hover {
         filter: drop-shadow(0 0 5px var(--color-purple));
+    }
+    .bg-gradient-purple {
+        background: var(--gradient-purple-light);
     }
 }

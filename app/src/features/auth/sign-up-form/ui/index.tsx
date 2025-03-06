@@ -25,13 +25,13 @@ const SignUpForm = () => {
     const {register, handleSubmit, onSubmit, errors} = useSignUpForm();
     return (
         <form onSubmit={handleSubmit(onSubmit)}
-              className={formAuthStyles()}>
-            <div className={formContainerStyles()}>
-                <div className={headerStyles()}>
+              className={cn(formAuthStyles, "min-h-[842px]")}>
+            <div className={formContainerStyles}>
+                <div className={headerStyles}>
                     <h2>Регистрация</h2>
                 </div>
                 <img src={icon} width="100" alt="Иконка облачного хранилища"/>
-                <div className={inputContainerStyles()}>
+                <div className={inputContainerStyles}>
                     <div>
                         <Input
                             {...register("firstname", validationRules.firstname)}
@@ -65,7 +65,7 @@ const SignUpForm = () => {
 
                     <div className={`${flexCol} gap-[23px] justify-start`}>
                         {([ERoleID.USER, ERoleID.ADMIN] as number[]).map((role) => (
-                            <label key={role} className={radioContainerStyles()}>
+                            <label key={role} className={radioContainerStyles}>
                                 <CheckboxInput
                                     {...register("role_id", validationRules.role_id)}
                                     name="role_id"
@@ -83,12 +83,12 @@ const SignUpForm = () => {
                     </div>
                 </div>
             </div>
-            <div className={formContainerStyles()}>
+            <div className={formContainerStyles}>
                 <Button
-                    className="w-[342px]"
+                    className="w-[328px]"
                     type="submit"
                 >Зарегистрироваться</Button>
-                <div className={linkStyles()}>
+                <div className={linkStyles}>
                     <p>Уже есть аккаунт?</p>
                     <Link to={ERouterPath.SIGN_IN_PAGE}>Войти</Link>
                 </div>

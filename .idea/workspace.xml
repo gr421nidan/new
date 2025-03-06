@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="ref???">
+    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="всё ещё хз по поводу ref???">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\79234\WebstormProjects\new\app\src\features\auth" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,7 +87,8 @@
       <workItem from="1741082651060" duration="2000" />
       <workItem from="1741083314246" duration="4000" />
       <workItem from="1741083578649" duration="1984000" />
-      <workItem from="1741097761436" duration="3133000" />
+      <workItem from="1741097761436" duration="3442000" />
+      <workItem from="1741253851672" duration="4786000" />
     </task>
     <task id="LOCAL-00001" summary="Дааа">
       <option name="closed" value="true" />
@@ -122,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741085444119</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="всё ещё хз по поводу ref???">
+      <option name="closed" value="true" />
+      <created>1741101215848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741101215848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +150,7 @@
     <MESSAGE value="стили" />
     <MESSAGE value="стили." />
     <MESSAGE value="ref???" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref???" />
+    <MESSAGE value="всё ещё хз по поводу ref???" />
+    <option name="LAST_COMMIT_MESSAGE" value="всё ещё хз по поводу ref???" />
   </component>
 </project>

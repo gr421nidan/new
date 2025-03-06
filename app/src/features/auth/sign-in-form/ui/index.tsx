@@ -22,14 +22,14 @@ const SignInForm = () => {
     const sizeInputs = "w-[474px] h-[54px]";
     return (
         <form onSubmit={handleSubmit(onSubmit)}
-              className={cn(formAuthStyles(), "pt-[52px] min-h-[697px]")}>
-            <div className={cn(formContainerStyles(), "gap-[30px]")}>
-                <div className={headerStyles()}>
+              className={cn(formAuthStyles, "py-[40px] min-h-[697px]")}>
+            <div className={cn(formContainerStyles, "gap-[30px]")}>
+                <div className={headerStyles}>
                     <h2>Авторизация</h2>
                 </div>
-                <div className={cn(formContainerStyles(), "gap-[48px]")}>
+                <div className={cn(formContainerStyles, "gap-[48px]")}>
                     <img src={icon} width="100" alt="Иконка облачного хранилища"/>
-                    <div className={formContainerStyles()}>
+                    <div className={formContainerStyles}>
                         <div>
                             <Input
                                 {...register("email", validationRules.email)}
@@ -46,7 +46,7 @@ const SignInForm = () => {
                                 className={cn(inputsStyles({error: !!errors.password}), sizeInputs)}/>
                             {errors.password && <p className={errorTextStyles()}>{errors.password.message}</p>}
                         </div>
-                        <div className={linkStyles()}>
+                        <div className={linkStyles}>
                             <p>Забыли пароль?</p>
                             <Link to={ERouterPath.RESET_PAGE}>Восстановить</Link>
                         </div>
@@ -54,11 +54,11 @@ const SignInForm = () => {
                 </div>
 
             </div>
-            <div className={formContainerStyles()}>
+            <div className={formContainerStyles}>
                 <Button
-                    className="w-[172px]"
+                    className="w-[165px]"
                     type="submit">Войти</Button>
-                <div className={linkStyles()}>
+                <div className={linkStyles}>
                     <p>Нет аккаунта?</p>
                     <Link to={ERouterPath.SIGN_UP_PAGE}>Зарегистрироваться</Link>
                 </div>
