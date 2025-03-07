@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="всё ещё хз по поводу ref???">
+    <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="стили">
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/reset-password/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/reset-password/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/reset-password/model/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/reset-password/type/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/sign-in/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/auth/sign-up/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/model/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-in-form/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/model/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/features/auth/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/features/auth/validation-auth-form/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/validation-auth-form/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/auth/reset-password/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/auth/reset-password/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +97,9 @@
       <workItem from="1741083314246" duration="4000" />
       <workItem from="1741083578649" duration="1984000" />
       <workItem from="1741097761436" duration="3442000" />
-      <workItem from="1741253851672" duration="4786000" />
+      <workItem from="1741253851672" duration="4819000" />
+      <workItem from="1741277410584" duration="6000" />
+      <workItem from="1741363291865" duration="3850000" />
     </task>
     <task id="LOCAL-00001" summary="Дааа">
       <option name="closed" value="true" />
@@ -138,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741101215848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="стили">
+      <option name="closed" value="true" />
+      <created>1741258699552</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741258699552</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,10 +166,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Дааа" />
     <MESSAGE value="Переделала чекбокс на переиспользуемый" />
-    <MESSAGE value="стили" />
     <MESSAGE value="стили." />
     <MESSAGE value="ref???" />
     <MESSAGE value="всё ещё хз по поводу ref???" />
-    <option name="LAST_COMMIT_MESSAGE" value="всё ещё хз по поводу ref???" />
+    <MESSAGE value="стили" />
+    <option name="LAST_COMMIT_MESSAGE" value="стили" />
   </component>
 </project>

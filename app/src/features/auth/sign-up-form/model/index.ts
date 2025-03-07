@@ -1,6 +1,6 @@
-import { useSignUpMutation } from "@/entities/auth/sign-up/model";
+import { useSignUpMutation } from "@/entities/auth/sign-up";
 import { useForm } from "react-hook-form";
-import {ERoleID} from "@/entities/auth/sign-up/type";
+import {ERoleID} from "@/entities/auth/sign-up";
 
 interface IFormData {
     firstname: string;

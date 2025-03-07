@@ -1,5 +1,5 @@
 import {useSignInForm} from "../model";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import ERouterPath from "@/shared/common/enum/router";
 import Input from "@/shared/components/inputs/base-input";
 import {validationRules} from "@/features/auth/validation-auth-form";
@@ -11,8 +11,9 @@ import {inputsStyles} from "@/shared/components/inputs/style.ts";
 import {
     formContainerStyles, formAuthStyles, errorTextStyles, headerStyles, linkStyles
 } from "../../style";
+import React from "react";
 
-const SignInForm = () => {
+const SignInForm: React.FC = () => {
     const {
         register,
         handleSubmit,

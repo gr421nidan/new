@@ -1,3 +1,5 @@
+import {FieldValues} from "react-hook-form";
+
 export const validationRules = {
     firstname: {
         required: "Поле обязательно к заполнению",
@@ -35,6 +37,11 @@ export const validationRules = {
             message: "Поле введено некорректно"
         }
     },
+    confirmPassword: (getValues: () => FieldValues) => ({
+        required: "Повторите пароль",
+        validate: (value: string) =>
+            value === getValues().password || "Пароли не совпадают",
+    }),
     role_id: {
         required: "Выберите форму использования"
     }

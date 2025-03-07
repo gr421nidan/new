@@ -1,4 +1,4 @@
-import { useSignInMutation } from "@/entities/auth/sign-in/model";
+import { useSignInMutation } from "@/entities/auth/sign-in";
 import { useForm } from "react-hook-form";
 
 interface IFormData {

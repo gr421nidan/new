@@ -19,9 +19,10 @@ import {validationRules} from "@/features/auth/validation-auth-form";
 import {Link} from "react-router-dom";
 import ERouterPath from "@/shared/common/enum/router";
 import CheckboxInput from "@/shared/components/inputs/checkbox-input";
+import React from "react";
 
 const sizeInputs = "w-[474px] h-[54px]";
-const SignUpForm = () => {
+const SignUpForm: React.FC = () => {
     const {register, handleSubmit, onSubmit, errors} = useSignUpForm();
     return (
         <form onSubmit={handleSubmit(onSubmit)}
