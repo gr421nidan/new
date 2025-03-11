@@ -21,7 +21,7 @@ const MainPage = (): ReactNode => {
     const logout = useLogout();
     return (
 
-        <div className="p-6 max-w-3xl mx-auto space-y-6 ">
+        <div className="">
             <Button onClick={logout} className="w-[200px]">Выход</Button>
             <ThemeSwitcher/>
             <CustomDatePicker className="w-[248px]"/>

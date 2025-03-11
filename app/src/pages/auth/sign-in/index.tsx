@@ -5,7 +5,7 @@ import SignInForm from "@/features/auth/sign-in-form/ui";
 const SignInPage = (): ReactNode => {
 
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center h-screen  w-screen">
             <SignInForm/>
         </div>
     );

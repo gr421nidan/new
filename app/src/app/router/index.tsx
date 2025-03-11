@@ -1,6 +1,7 @@
 import {createBrowserRouter} from "react-router-dom";
-import {LazyMainPage, LazyResetPasswordPage, LazySignInPage, LazySignUpPage} from "@/pages";
+import {LazyMainPage, LazyResetPasswordPage, LazySignInPage, LazySignUpPage, LazyUsersPage} from "@/pages";
 import ERouterPath from "@/shared/common/enum/router";
+import MainLayout from "@/shared/components/layouts/main";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,20 @@ const router = createBrowserRouter([
     },
     {   element: <LazyResetPasswordPage/>,
         path: ERouterPath.RESET_PAGE
+    },
+    {
+        path: "/",
+        element: <MainLayout />,
+        children: [
+            {
+                path: ERouterPath.USERS,
+                element: <LazyUsersPage/>,
+            },
+            {
+                path: ERouterPath.SIGN_UP_PAGE,
+                element: <LazySignUpPage />,
+            },
+        ],
     },
 ])
 export default router

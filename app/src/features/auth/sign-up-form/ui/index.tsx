@@ -91,7 +91,7 @@ const SignUpForm: React.FC = () => {
                 >Зарегистрироваться</Button>
                 <div className={linkStyles}>
                     <p>Уже есть аккаунт?</p>
-                    <Link to={ERouterPath.SIGN_IN_PAGE}>Войти</Link>
+                    <Link to={ERouterPath.SIGN_IN_PAGE} className="text-dark-gray">Войти</Link>
                 </div>
             </div>
         </form>

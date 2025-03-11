@@ -22,18 +22,26 @@ const ResetPasswordForms = () => {
     const handlePasswordSuccess = () => {
         navigate(ERouterPath.SIGN_IN_PAGE);
     };
+    const handleBack = () => {
+        setStep(prev => (prev > 1 ? (prev - 1) as 1 | 2 | 3 : prev));
+    };
     return (
         <>
             {step === 1 && (
                 <StepEmail onSuccess={handleEmailSuccess} />
             )}
             {step === 2 && (
-                <StepCode email={email} onSuccess={handleCodeSuccess} />
+                <StepCode
+                    email={email}
+                    onSuccess={handleCodeSuccess}
+                    onBack={handleBack}
+                />
             )}
             {step === 3 && (
                 <StepNewPassword
                     email={email}
                     confirmation_code={code}
+                    onBack={handleBack}
                     onSuccess={handlePasswordSuccess}/>)}
         </>
     );

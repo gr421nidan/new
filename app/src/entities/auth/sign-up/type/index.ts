@@ -14,3 +14,9 @@ export interface ISignUpResponse{
     accessToken: string;
     id: number;
 }
+
+export interface IApiErrorResponse {
+    message?: string;
+    type?: string;
+    property?: string;
+}

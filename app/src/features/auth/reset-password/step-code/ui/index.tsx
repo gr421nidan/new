@@ -10,15 +10,15 @@ import {
 } from "@/features/auth/style";
 import Button from "@/shared/components/buttons/button";
 import icon from "@/assets/icon.svg";
-import { Link } from "react-router-dom";
-import ERouterPath from "@/shared/common/enum/router";
 import OtpCodeInput from "@/shared/components/inputs/otp-input";
 
 interface IStepCodeProps {
+    email: string;
     onSuccess: (confirmation_code: string) => void;
+    onBack: () => void;
 }
 
-const StepCode: React.FC<IStepCodeProps> = ({ onSuccess }) => {
+const StepCode: React.FC<IStepCodeProps> = ({ onSuccess, onBack }) => {
     const { otp, setOtp, handleSubmit } = useStepCodeForm({ onSuccess });
 
     return (
@@ -62,7 +62,12 @@ const StepCode: React.FC<IStepCodeProps> = ({ onSuccess }) => {
                     Продолжить
                 </Button>
                 <div className={cn(linkStyles, "mt-4")}>
-                    <Link to={ERouterPath.SIGN_IN_PAGE}>Вернуться назад</Link>
+                    <button
+                        type="button"
+                        onClick={onBack}
+                        className="cursor-pointer">
+                        Назад
+                    </button>
                 </div>
             </div>
         </form>

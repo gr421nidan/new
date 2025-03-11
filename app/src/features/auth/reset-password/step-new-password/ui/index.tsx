@@ -12,20 +12,19 @@ import Input from "@/shared/components/inputs/base-input";
 import { inputsStyles } from "@/shared/components/inputs/style";
 import Button from "@/shared/components/buttons/button";
 import icon from "@/assets/icon.svg";
-import { Link } from "react-router-dom";
-import ERouterPath from "@/shared/common/enum/router";
 import {validationRules} from "@/features/auth/validation-auth-form";
 
 interface IStepNewPasswordProps {
     email: string;
     confirmation_code: string;
     onSuccess: () => void;
+    onBack: () => void;
 }
 
 const StepNewPassword: React.FC<IStepNewPasswordProps> = ({
                                                              email,
                                                              confirmation_code,
-                                                             onSuccess,
+                                                             onSuccess, onBack
                                                          }) => {
     const {
         register,
@@ -89,7 +88,12 @@ const StepNewPassword: React.FC<IStepNewPasswordProps> = ({
                     Сохранить
                 </Button>
                 <div className={cn(linkStyles, "mt-4")}>
-                    <Link to={ERouterPath.SIGN_IN_PAGE}>Вернуться назад</Link>
+                    <button
+                        type="button"
+                        onClick={onBack}
+                        className="cursor-pointer">
+                        Назад
+                    </button>
                 </div>
             </div>
         </form>

@@ -10,22 +10,29 @@
     --color-purple-secondary: rgba(84, 56, 126, 0.5);
     --color-purple-dark-secondary: #483B55;
     --color-gray: rgba(252, 249, 255, 0.16);
-    --color-error-primary:rgba(195, 63, 63, 1);
+    --color-error-primary: rgba(195, 63, 63, 1);
     --color-error-secondary: rgba(253, 169, 169, 0.16);
-    --color-custom-shadow:rgba(174, 161, 201, 0.5);
-    --color-white-secondary:rgba(255, 255, 255, 0.7);
+    --color-custom-shadow: rgba(174, 161, 201, 0.5);
+    --color-white-secondary: rgba(255, 255, 255, 0.7);
     --gradient-purple-light: linear-gradient(to right, rgba(174, 161, 201, 0.5), rgba(174, 161, 201, 0.1));
     --color-purple-lighter-opacity: rgba(98, 70, 153, 0.5);
+    --color-dark-theme: rgba(11, 1, 33, 1);
+    --font-manrope: 'Manrope', sans-serif;
+    --gradient-purple-dark-border: linear-gradient(to right, rgba(98, 70, 153, 1), rgba(11, 1, 33, 1), rgba(98, 70, 153, 1));
+    --gradient-purple-light-border: linear-gradient(to right, rgba(174, 161, 201, 1), rgba(255, 255, 255, 1), rgba(174, 161, 201, 1));
+
 }
 [data-theme="dark"] body {
-    background-color: var(--color-purple-dark);
+    background-color: var(--color-dark-theme);
 }
-body{
-    min-width: 1920px;
-    min-height: 1280px;
+
+body {
+    width: 1920px;
+    height: 1080px;
 
     font-family: "Nunito", sans-serif;
 }
+
 @layer base {
     input[type="number"]::-webkit-inner-spin-button,
     input[type="number"]::-webkit-outer-spin-button {
@@ -37,21 +44,29 @@ body{
     input[type="password"]::-ms-clear {
         @apply hidden;
     }
+
     h1 {
         @apply text-[64px] ;
     }
+
     h2 {
-        @apply text-[40px];
+        @apply text-[40px] font-manrope;
     }
-    a{
-        @apply text-dark-gray hover:text-purple-light active:text-purple dark:text-white;
+
+    h3 {
+        @apply text-[24px] font-manrope font-light;
+    }
+
+    a {
+        @apply  hover:text-purple-light active:text-purple dark:text-white;
     }
 }
 
 .react-datepicker__day--selected {
     @apply bg-purple text-white ;
 }
-.react-datepicker__header  {
+
+.react-datepicker__header {
     @apply bg-white dark:bg-purple-dark  shadow-[0_0_20px_var(--color-purple)]
 }
 
@@ -59,13 +74,23 @@ body{
     .hover\:custom-shadow:hover {
         box-shadow: 0 0 20px var(--color-custom-shadow);
     }
+
     .focus\:custom-shadow:focus {
         box-shadow: 0 0 20px var(--color-custom-shadow);
     }
+
     .hover\:custom-drop-shadow:hover {
         filter: drop-shadow(0 0 5px var(--color-purple));
     }
-    .bg-gradient-purple {
+    .bg-gr-purple {
         background: var(--gradient-purple-light);
+    }
+    .br-gr-purple-light{
+        border-width: 1px;
+        border-style: solid;
+        border-image: var(--gradient-purple-light-border);
+    }
+    .br-gr-purple-dark{
+        border-color: var(--gradient-purple-dark-border);
     }
 }
