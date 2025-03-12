@@ -5,30 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="018b18e3-3c5e-4ef0-b699-7e339eecf010" name="Changes" comment="сброс пароля">
-      <change afterPath="$PROJECT_DIR$/app/src/pages/admin/users-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/shared/components/layouts/main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/header/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/navbar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/navbar/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/sidebar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/widgets/sidebar/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/admin/add-user/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/entities/admin/add-user/use-case/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/admin/add-user-form/presenter/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/admin/add-user-form/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/admin/add-user-form/ui/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/admin/add-user-form/validation-add-user-form/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/search/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/features/search/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/shared/type/admin/add-user/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/shared/type/auth/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/shared/type/auth/sign-up/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/app/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/app/router/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/entities/auth/sign-up/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/entities/auth/sign-up/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/entities/auth/sign-up/model/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/entities/auth/sign-up/model/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/entities/auth/sign-up/type/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/entities/auth/sign-up/type/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/features/auth/reset-password/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/reset-password/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/features/auth/reset-password/step-code/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/reset-password/step-code/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/features/auth/reset-password/step-new-password/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/reset-password/step-new-password/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/sign-up-form/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/features/auth/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/features/auth/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/auth/sign-in/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/auth/sign-in/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/auth/sign-up/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/auth/sign-up/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/shared/common/enum/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/common/enum/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/pages/admin/users-page/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/pages/admin/users-page/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/shared/components/layouts/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/shared/components/layouts/main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/widgets/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/widgets/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/widgets/navbar/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/widgets/navbar/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/widgets/sidebar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/widgets/sidebar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/widgets/sidebar/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/widgets/sidebar/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -119,7 +116,16 @@
       <workItem from="1741667568938" duration="6000" />
       <workItem from="1741671350901" duration="1259000" />
       <workItem from="1741673001324" duration="7000" />
-      <workItem from="1741674572824" duration="4597000" />
+      <workItem from="1741674572824" duration="4632000" />
+      <workItem from="1741693527449" duration="2768000" />
+      <workItem from="1741707568473" duration="1366000" />
+      <workItem from="1741749351655" duration="4000" />
+      <workItem from="1741750264771" duration="15000" />
+      <workItem from="1741750343243" duration="13620000" />
+      <workItem from="1741774863022" duration="3000" />
+      <workItem from="1741775509543" duration="11000" />
+      <workItem from="1741775889629" duration="10000" />
+      <workItem from="1741775934898" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="Дааа">
       <option name="closed" value="true" />
@@ -193,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741368446728</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="сброс пароля">
+      <option name="closed" value="true" />
+      <created>1741679220932</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741679220932</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -18,9 +18,6 @@
     --color-purple-lighter-opacity: rgba(98, 70, 153, 0.5);
     --color-dark-theme: rgba(11, 1, 33, 1);
     --font-manrope: 'Manrope', sans-serif;
-    --gradient-purple-dark-border: linear-gradient(to right, rgba(98, 70, 153, 1), rgba(11, 1, 33, 1), rgba(98, 70, 153, 1));
-    --gradient-purple-light-border: linear-gradient(to right, rgba(174, 161, 201, 1), rgba(255, 255, 255, 1), rgba(174, 161, 201, 1));
-
 }
 [data-theme="dark"] body {
     background-color: var(--color-dark-theme);
@@ -46,7 +43,7 @@ body {
     }
 
     h1 {
-        @apply text-[64px] ;
+        @apply text-[48px] font-manrope;
     }
 
     h2 {
@@ -84,13 +81,5 @@ body {
     }
     .bg-gr-purple {
         background: var(--gradient-purple-light);
-    }
-    .br-gr-purple-light{
-        border-width: 1px;
-        border-style: solid;
-        border-image: var(--gradient-purple-light-border);
-    }
-    .br-gr-purple-dark{
-        border-color: var(--gradient-purple-dark-border);
     }
 }
